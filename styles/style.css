@@ -168,7 +168,7 @@ button:focus-visible {
   background-color: var(--accent-color, #ff0070);
 }
 
-.list-item__text{
+.list-item__text {
   line-height: 23.4px;
 }
 
