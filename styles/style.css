@@ -142,6 +142,10 @@ button:focus-visible {
   margin-bottom: 52px;
 }
 
+.list-subtitle {
+  margin-bottom: 20px;
+}
+
 .content__block-list-item {
   margin-bottom: 21px;
 }
@@ -152,7 +156,7 @@ button:focus-visible {
 
 .card {
   display: grid;
-  gap: 10px;
+  gap: 11px;
 }
 
 .list-item__subtitle {
@@ -202,6 +206,7 @@ button:focus-visible {
 
 .footer {
   block-size: 100vh;
+  inline-size: 100%;
   display: grid;
   justify-items: center;
   min-block-size: 668px;
@@ -243,6 +248,10 @@ button:focus-visible {
 
   .main {
     padding: 60px 20px;
+  }
+
+  .content__block-title {
+    max-width: 236px;
   }
 
   .content__block-column {
@@ -305,6 +314,11 @@ button:focus-visible {
   .header__theme-menu-list {
     flex-direction: row;
   }
+
+  .content__block-title {
+    max-width: 315px;
+  }
+
 
   .content__block-row {
     display: grid;
