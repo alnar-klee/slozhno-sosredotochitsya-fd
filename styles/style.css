@@ -87,6 +87,7 @@
   background-color: transparent;
   border: none;
   text-transform: lowercase;
+  padding: 1px 12px;
 }
 
 .header__theme-menu-button_active {
@@ -125,7 +126,7 @@ button:focus-visible {
 .subtitle {
   font-size: var(--font-size, 18px);
   font-weight: var(--font-weight-title, bold);
-  line-height: 23.4px;
+  line-height: 24px;
 }
 
 .main {
@@ -138,11 +139,11 @@ button:focus-visible {
 }
 
 .content__block-list {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .content__block-list-item {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .content__block-list-item:last-child {
