@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   color: var(--text-color, #f1b2ce);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, "Arial"), sans-serif;
   font-size: var(--font-size, 18px);
   background-image: var(--bg-image);
   background-attachment: fixed;
@@ -84,6 +84,7 @@
 }
 
 .header__theme-menu-button {
+  appearance: none;
   background-color: transparent;
   border: none;
   text-transform: lowercase;
@@ -96,7 +97,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--hover-color, rgb(50 49 45 / 0.4));
+  outline: 1px solid var(--hover-color, rgb(50 49 45 / 0.4));
 }
 
 button:focus {
@@ -104,8 +105,7 @@ button:focus {
 }
 
 button:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: var(--decor-color, #ff0070);
+  border-bottom: 1px solid var(--decor-color, #ff0070);
 }
 
 .heading {
@@ -187,7 +187,7 @@ button:focus-visible {
 }
 
 .link:focus-visible {
-  border: 1px solid var(--text-color, #f1b2ce);
+  outline: 1px solid var(--text-color, #f1b2ce);
 }
 
 .gallery {
@@ -242,6 +242,9 @@ button:focus-visible {
 
   .heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .cover__title {
     margin-left: -20px;
   }
 
@@ -258,9 +261,10 @@ button:focus-visible {
     max-width: 236px;
   }
 
-  .content__block-column {
+  .content__block-why,
+  .content__block-advice {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 2fr;
     gap: 20px;
   }
 
@@ -327,7 +331,7 @@ button:focus-visible {
     grid-template-rows: 260px 315px 433px;
   }
 
-  .content__block-row {
+  .content__block-reasons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
