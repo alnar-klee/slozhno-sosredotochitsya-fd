@@ -86,7 +86,7 @@
 .header__theme-menu-button {
   appearance: none;
   background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
   text-transform: lowercase;
   padding: 1px 12px;
 }
@@ -178,8 +178,7 @@ button:focus-visible {
 }
 
 .link:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--text-color, #f1b2ce);
+  border-bottom: 1px solid var(--text-color, #f1b2ce);
 }
 
 .link:focus {
