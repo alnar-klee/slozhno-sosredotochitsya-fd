@@ -319,6 +319,9 @@ button:focus-visible {
     max-width: 315px;
   }
 
+  .gallery__block {
+    grid-template-rows: 260px 315px 433px;
+  }
 
   .content__block-row {
     display: grid;
